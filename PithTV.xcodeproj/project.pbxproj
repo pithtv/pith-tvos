@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F358E6B2914171B0099FD1A /* PithTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E6A2914171B0099FD1A /* PithTVApp.swift */; };
+		7F358E6D2914171B0099FD1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E6C2914171B0099FD1A /* ContentView.swift */; };
+		7F358E6F2914171C0099FD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F358E6E2914171C0099FD1A /* Assets.xcassets */; };
+		7F358E722914171C0099FD1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F358E712914171C0099FD1A /* Preview Assets.xcassets */; };
+		7F358E7C2914171D0099FD1A /* PithTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E7B2914171D0099FD1A /* PithTVTests.swift */; };
+		7F358E862914171D0099FD1A /* PithTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E852914171D0099FD1A /* PithTVUITests.swift */; };
+		7F358E882914171D0099FD1A /* PithTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E872914171D0099FD1A /* PithTVUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F358E782914171D0099FD1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F358E5F2914171B0099FD1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F358E662914171B0099FD1A;
+			remoteInfo = PithTV;
+		};
+		7F358E822914171D0099FD1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F358E5F2914171B0099FD1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F358E662914171B0099FD1A;
+			remoteInfo = PithTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F358E672914171B0099FD1A /* PithTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PithTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F358E6A2914171B0099FD1A /* PithTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PithTVApp.swift; sourceTree = "<group>"; };
+		7F358E6C2914171B0099FD1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F358E6E2914171C0099FD1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F358E712914171C0099FD1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F358E772914171D0099FD1A /* PithTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PithTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F358E7B2914171D0099FD1A /* PithTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PithTVTests.swift; sourceTree = "<group>"; };
+		7F358E812914171D0099FD1A /* PithTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PithTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F358E852914171D0099FD1A /* PithTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PithTVUITests.swift; sourceTree = "<group>"; };
+		7F358E872914171D0099FD1A /* PithTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PithTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F358E642914171B0099FD1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F358E742914171D0099FD1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F358E7E2914171D0099FD1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F358E5E2914171B0099FD1A = {
+			isa = PBXGroup;
+			children = (
+				7F358E692914171B0099FD1A /* PithTV */,
+				7F358E7A2914171D0099FD1A /* PithTVTests */,
+				7F358E842914171D0099FD1A /* PithTVUITests */,
+				7F358E682914171B0099FD1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F358E682914171B0099FD1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F358E672914171B0099FD1A /* PithTV.app */,
+				7F358E772914171D0099FD1A /* PithTVTests.xctest */,
+				7F358E812914171D0099FD1A /* PithTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F358E692914171B0099FD1A /* PithTV */ = {
+			isa = PBXGroup;
+			children = (
+				7F358E6A2914171B0099FD1A /* PithTVApp.swift */,
+				7F358E6C2914171B0099FD1A /* ContentView.swift */,
+				7F358E6E2914171C0099FD1A /* Assets.xcassets */,
+				7F358E702914171C0099FD1A /* Preview Content */,
+			);
+			path = PithTV;
+			sourceTree = "<group>";
+		};
+		7F358E702914171C0099FD1A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F358E712914171C0099FD1A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F358E7A2914171D0099FD1A /* PithTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F358E7B2914171D0099FD1A /* PithTVTests.swift */,
+			);
+			path = PithTVTests;
+			sourceTree = "<group>";
+		};
+		7F358E842914171D0099FD1A /* PithTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F358E852914171D0099FD1A /* PithTVUITests.swift */,
+				7F358E872914171D0099FD1A /* PithTVUITestsLaunchTests.swift */,
+			);
+			path = PithTVUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F358E662914171B0099FD1A /* PithTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F358E8B2914171D0099FD1A /* Build configuration list for PBXNativeTarget "PithTV" */;
+			buildPhases = (
+				7F358E632914171B0099FD1A /* Sources */,
+				7F358E642914171B0099FD1A /* Frameworks */,
+				7F358E652914171B0099FD1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PithTV;
+			productName = PithTV;
+			productReference = 7F358E672914171B0099FD1A /* PithTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F358E762914171D0099FD1A /* PithTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F358E8E2914171D0099FD1A /* Build configuration list for PBXNativeTarget "PithTVTests" */;
+			buildPhases = (
+				7F358E732914171D0099FD1A /* Sources */,
+				7F358E742914171D0099FD1A /* Frameworks */,
+				7F358E752914171D0099FD1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F358E792914171D0099FD1A /* PBXTargetDependency */,
+			);
+			name = PithTVTests;
+			productName = PithTVTests;
+			productReference = 7F358E772914171D0099FD1A /* PithTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F358E802914171D0099FD1A /* PithTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F358E912914171D0099FD1A /* Build configuration list for PBXNativeTarget "PithTVUITests" */;
+			buildPhases = (
+				7F358E7D2914171D0099FD1A /* Sources */,
+				7F358E7E2914171D0099FD1A /* Frameworks */,
+				7F358E7F2914171D0099FD1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F358E832914171D0099FD1A /* PBXTargetDependency */,
+			);
+			name = PithTVUITests;
+			productName = PithTVUITests;
+			productReference = 7F358E812914171D0099FD1A /* PithTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F358E5F2914171B0099FD1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					7F358E662914171B0099FD1A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					7F358E762914171D0099FD1A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 7F358E662914171B0099FD1A;
+					};
+					7F358E802914171D0099FD1A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 7F358E662914171B0099FD1A;
+					};
+				};
+			};
+			buildConfigurationList = 7F358E622914171B0099FD1A /* Build configuration list for PBXProject "PithTV" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F358E5E2914171B0099FD1A;
+			productRefGroup = 7F358E682914171B0099FD1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F358E662914171B0099FD1A /* PithTV */,
+				7F358E762914171D0099FD1A /* PithTVTests */,
+				7F358E802914171D0099FD1A /* PithTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F358E652914171B0099FD1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F358E722914171C0099FD1A /* Preview Assets.xcassets in Resources */,
+				7F358E6F2914171C0099FD1A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F358E752914171D0099FD1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F358E7F2914171D0099FD1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F358E632914171B0099FD1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F358E6D2914171B0099FD1A /* ContentView.swift in Sources */,
+				7F358E6B2914171B0099FD1A /* PithTVApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F358E732914171D0099FD1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F358E7C2914171D0099FD1A /* PithTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F358E7D2914171D0099FD1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F358E862914171D0099FD1A /* PithTVUITests.swift in Sources */,
+				7F358E882914171D0099FD1A /* PithTVUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F358E792914171D0099FD1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F358E662914171B0099FD1A /* PithTV */;
+			targetProxy = 7F358E782914171D0099FD1A /* PBXContainerItemProxy */;
+		};
+		7F358E832914171D0099FD1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F358E662914171B0099FD1A /* PithTV */;
+			targetProxy = 7F358E822914171D0099FD1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7F358E892914171D0099FD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+			};
+			name = Debug;
+		};
+		7F358E8A2914171D0099FD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F358E8C2914171D0099FD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PithTV/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pithmediaserver.PithTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		7F358E8D2914171D0099FD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PithTV/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pithmediaserver.PithTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		7F358E8F2914171D0099FD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pithmediaserver.PithTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PithTV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PithTV";
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+			};
+			name = Debug;
+		};
+		7F358E902914171D0099FD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pithmediaserver.PithTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PithTV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PithTV";
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+			};
+			name = Release;
+		};
+		7F358E922914171D0099FD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pithmediaserver.PithTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = PithTV;
+			};
+			name = Debug;
+		};
+		7F358E932914171D0099FD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pithmediaserver.PithTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = PithTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F358E622914171B0099FD1A /* Build configuration list for PBXProject "PithTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F358E892914171D0099FD1A /* Debug */,
+				7F358E8A2914171D0099FD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F358E8B2914171D0099FD1A /* Build configuration list for PBXNativeTarget "PithTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F358E8C2914171D0099FD1A /* Debug */,
+				7F358E8D2914171D0099FD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F358E8E2914171D0099FD1A /* Build configuration list for PBXNativeTarget "PithTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F358E8F2914171D0099FD1A /* Debug */,
+				7F358E902914171D0099FD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F358E912914171D0099FD1A /* Build configuration list for PBXNativeTarget "PithTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F358E922914171D0099FD1A /* Debug */,
+				7F358E932914171D0099FD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F358E5F2914171B0099FD1A /* Project object */;
+}
