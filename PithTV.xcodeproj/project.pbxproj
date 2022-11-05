@@ -14,6 +14,13 @@
 		7F358E7C2914171D0099FD1A /* PithTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E7B2914171D0099FD1A /* PithTVTests.swift */; };
 		7F358E862914171D0099FD1A /* PithTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E852914171D0099FD1A /* PithTVUITests.swift */; };
 		7F358E882914171D0099FD1A /* PithTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E872914171D0099FD1A /* PithTVUITestsLaunchTests.swift */; };
+		7FE7A259291595FA00B322B0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7A258291595FA00B322B0 /* Channel.swift */; };
+		7FE7A25B291596CE00B322B0 /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FE7A25A291596CE00B322B0 /* channels.json */; };
+		7FE7A25D2915982200B322B0 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7A25C2915982200B322B0 /* ModelData.swift */; };
+		7FE7A25F291651DE00B322B0 /* Ribbon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7A25E291651DE00B322B0 /* Ribbon.swift */; };
+		7FE7A2612916521A00B322B0 /* RibbonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7A2602916521A00B322B0 /* RibbonItem.swift */; };
+		7FE7A263291657DA00B322B0 /* ribbons.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FE7A262291657DA00B322B0 /* ribbons.json */; };
+		7FE7A2652916580100B322B0 /* recentlyAdded.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FE7A2642916580100B322B0 /* recentlyAdded.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		7F358E812914171D0099FD1A /* PithTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PithTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F358E852914171D0099FD1A /* PithTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PithTVUITests.swift; sourceTree = "<group>"; };
 		7F358E872914171D0099FD1A /* PithTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PithTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7FE7A258291595FA00B322B0 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		7FE7A25A291596CE00B322B0 /* channels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
+		7FE7A25C2915982200B322B0 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		7FE7A25E291651DE00B322B0 /* Ribbon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ribbon.swift; sourceTree = "<group>"; };
+		7FE7A2602916521A00B322B0 /* RibbonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonItem.swift; sourceTree = "<group>"; };
+		7FE7A262291657DA00B322B0 /* ribbons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ribbons.json; sourceTree = "<group>"; };
+		7FE7A2642916580100B322B0 /* recentlyAdded.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recentlyAdded.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,7 @@
 		7F358E692914171B0099FD1A /* PithTV */ = {
 			isa = PBXGroup;
 			children = (
+				7FE7A257291595EA00B322B0 /* Model */,
 				7F358E6A2914171B0099FD1A /* PithTVApp.swift */,
 				7F358E6C2914171B0099FD1A /* ContentView.swift */,
 				7F358E6E2914171C0099FD1A /* Assets.xcassets */,
@@ -125,6 +140,20 @@
 				7F358E872914171D0099FD1A /* PithTVUITestsLaunchTests.swift */,
 			);
 			path = PithTVUITests;
+			sourceTree = "<group>";
+		};
+		7FE7A257291595EA00B322B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FE7A258291595FA00B322B0 /* Channel.swift */,
+				7FE7A25A291596CE00B322B0 /* channels.json */,
+				7FE7A25C2915982200B322B0 /* ModelData.swift */,
+				7FE7A25E291651DE00B322B0 /* Ribbon.swift */,
+				7FE7A2602916521A00B322B0 /* RibbonItem.swift */,
+				7FE7A262291657DA00B322B0 /* ribbons.json */,
+				7FE7A2642916580100B322B0 /* recentlyAdded.json */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +260,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE7A25B291596CE00B322B0 /* channels.json in Resources */,
 				7F358E722914171C0099FD1A /* Preview Assets.xcassets in Resources */,
 				7F358E6F2914171C0099FD1A /* Assets.xcassets in Resources */,
+				7FE7A263291657DA00B322B0 /* ribbons.json in Resources */,
+				7FE7A2652916580100B322B0 /* recentlyAdded.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F358E6D2914171B0099FD1A /* ContentView.swift in Sources */,
+				7FE7A25F291651DE00B322B0 /* Ribbon.swift in Sources */,
+				7FE7A25D2915982200B322B0 /* ModelData.swift in Sources */,
+				7FE7A259291595FA00B322B0 /* Channel.swift in Sources */,
+				7FE7A2612916521A00B322B0 /* RibbonItem.swift in Sources */,
 				7F358E6B2914171B0099FD1A /* PithTVApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
