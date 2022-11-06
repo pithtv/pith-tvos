@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D32D03A0570C24654540739 /* Pods_PithTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5510FA77A3BD07C6725ECD /* Pods_PithTVTests.framework */; };
+		6D6FABB3572E52824D6DA65F /* Pods_PithTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A230DC02DB9BFC1801D915 /* Pods_PithTV.framework */; };
 		7F358E6B2914171B0099FD1A /* PithTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E6A2914171B0099FD1A /* PithTVApp.swift */; };
 		7F358E6D2914171B0099FD1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E6C2914171B0099FD1A /* ContentView.swift */; };
 		7F358E6F2914171C0099FD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F358E6E2914171C0099FD1A /* Assets.xcassets */; };
@@ -21,6 +23,10 @@
 		7FE7A2612916521A00B322B0 /* RibbonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7A2602916521A00B322B0 /* RibbonItem.swift */; };
 		7FE7A263291657DA00B322B0 /* ribbons.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FE7A262291657DA00B322B0 /* ribbons.json */; };
 		7FE7A2652916580100B322B0 /* recentlyAdded.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FE7A2642916580100B322B0 /* recentlyAdded.json */; };
+		7FE7A26729168B4000B322B0 /* VlcPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7A26629168B4000B322B0 /* VlcPlayer.swift */; };
+		7FE7A26929168B9400B322B0 /* VlcPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7A26829168B9400B322B0 /* VlcPlayerView.swift */; };
+		7FE7A2912916E7D100B322B0 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7A2902916E7D100B322B0 /* VideoView.swift */; };
+		D2AC24B5C53F75A1F57233DA /* Pods_PithTV_PithTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC9DADF01637FFCCDD19E47 /* Pods_PithTV_PithTVUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		312513E9B40E84DA481F41A3 /* Pods-PithTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PithTV.debug.xcconfig"; path = "Target Support Files/Pods-PithTV/Pods-PithTV.debug.xcconfig"; sourceTree = "<group>"; };
+		47B2F14CB45A7EF0E1C1A019 /* Pods-PithTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PithTVTests.debug.xcconfig"; path = "Target Support Files/Pods-PithTVTests/Pods-PithTVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F358E672914171B0099FD1A /* PithTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PithTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F358E6A2914171B0099FD1A /* PithTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PithTVApp.swift; sourceTree = "<group>"; };
 		7F358E6C2914171B0099FD1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +66,17 @@
 		7FE7A2602916521A00B322B0 /* RibbonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonItem.swift; sourceTree = "<group>"; };
 		7FE7A262291657DA00B322B0 /* ribbons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ribbons.json; sourceTree = "<group>"; };
 		7FE7A2642916580100B322B0 /* recentlyAdded.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recentlyAdded.json; sourceTree = "<group>"; };
+		7FE7A26629168B4000B322B0 /* VlcPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlcPlayer.swift; sourceTree = "<group>"; };
+		7FE7A26829168B9400B322B0 /* VlcPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlcPlayerView.swift; sourceTree = "<group>"; };
+		7FE7A26C29168CF100B322B0 /* PithTV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PithTV-Bridging-Header.h"; sourceTree = "<group>"; };
+		7FE7A2902916E7D100B322B0 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		B06843D632078128AC4A0B3C /* Pods-PithTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PithTV.release.xcconfig"; path = "Target Support Files/Pods-PithTV/Pods-PithTV.release.xcconfig"; sourceTree = "<group>"; };
+		BE836EADC798C23E499A9B8E /* Pods-PithTV-PithTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PithTV-PithTVUITests.release.xcconfig"; path = "Target Support Files/Pods-PithTV-PithTVUITests/Pods-PithTV-PithTVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CDC9DADF01637FFCCDD19E47 /* Pods_PithTV_PithTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PithTV_PithTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A230DC02DB9BFC1801D915 /* Pods_PithTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PithTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5510FA77A3BD07C6725ECD /* Pods_PithTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PithTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F48E07C5E8DD807908E67B /* Pods-PithTV-PithTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PithTV-PithTVUITests.debug.xcconfig"; path = "Target Support Files/Pods-PithTV-PithTVUITests/Pods-PithTV-PithTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7C295D500F73FA6BFEF0714 /* Pods-PithTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PithTVTests.release.xcconfig"; path = "Target Support Files/Pods-PithTVTests/Pods-PithTVTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6FABB3572E52824D6DA65F /* Pods_PithTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D32D03A0570C24654540739 /* Pods_PithTVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +100,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AC24B5C53F75A1F57233DA /* Pods_PithTV_PithTVUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EAFD6A2179A12A0ECA5E195 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				312513E9B40E84DA481F41A3 /* Pods-PithTV.debug.xcconfig */,
+				B06843D632078128AC4A0B3C /* Pods-PithTV.release.xcconfig */,
+				F1F48E07C5E8DD807908E67B /* Pods-PithTV-PithTVUITests.debug.xcconfig */,
+				BE836EADC798C23E499A9B8E /* Pods-PithTV-PithTVUITests.release.xcconfig */,
+				47B2F14CB45A7EF0E1C1A019 /* Pods-PithTVTests.debug.xcconfig */,
+				F7C295D500F73FA6BFEF0714 /* Pods-PithTVTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7F358E5E2914171B0099FD1A = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +127,8 @@
 				7F358E7A2914171D0099FD1A /* PithTVTests */,
 				7F358E842914171D0099FD1A /* PithTVUITests */,
 				7F358E682914171B0099FD1A /* Products */,
+				1EAFD6A2179A12A0ECA5E195 /* Pods */,
+				E3031EBEC202C45D3BA98F67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,11 +145,12 @@
 		7F358E692914171B0099FD1A /* PithTV */ = {
 			isa = PBXGroup;
 			children = (
+				7FE7A28F2916E79700B322B0 /* Views */,
 				7FE7A257291595EA00B322B0 /* Model */,
 				7F358E6A2914171B0099FD1A /* PithTVApp.swift */,
-				7F358E6C2914171B0099FD1A /* ContentView.swift */,
 				7F358E6E2914171C0099FD1A /* Assets.xcassets */,
 				7F358E702914171C0099FD1A /* Preview Content */,
+				7FE7A26C29168CF100B322B0 /* PithTV-Bridging-Header.h */,
 			);
 			path = PithTV;
 			sourceTree = "<group>";
@@ -156,6 +194,27 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7FE7A28F2916E79700B322B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F358E6C2914171B0099FD1A /* ContentView.swift */,
+				7FE7A26629168B4000B322B0 /* VlcPlayer.swift */,
+				7FE7A26829168B9400B322B0 /* VlcPlayerView.swift */,
+				7FE7A2902916E7D100B322B0 /* VideoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E3031EBEC202C45D3BA98F67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7A230DC02DB9BFC1801D915 /* Pods_PithTV.framework */,
+				CDC9DADF01637FFCCDD19E47 /* Pods_PithTV_PithTVUITests.framework */,
+				DD5510FA77A3BD07C6725ECD /* Pods_PithTVTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F358E8B2914171D0099FD1A /* Build configuration list for PBXNativeTarget "PithTV" */;
 			buildPhases = (
+				98C42C73A480112D58BCBDB9 /* [CP] Check Pods Manifest.lock */,
 				7F358E632914171B0099FD1A /* Sources */,
 				7F358E642914171B0099FD1A /* Frameworks */,
 				7F358E652914171B0099FD1A /* Resources */,
+				9CEDBCC52694C1E604F6DAE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F358E8E2914171D0099FD1A /* Build configuration list for PBXNativeTarget "PithTVTests" */;
 			buildPhases = (
+				992FD2BD067EDA4A86392A81 /* [CP] Check Pods Manifest.lock */,
 				7F358E732914171D0099FD1A /* Sources */,
 				7F358E742914171D0099FD1A /* Frameworks */,
 				7F358E752914171D0099FD1A /* Resources */,
@@ -198,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F358E912914171D0099FD1A /* Build configuration list for PBXNativeTarget "PithTVUITests" */;
 			buildPhases = (
+				A3AA33A6AF3425A94F5D8B68 /* [CP] Check Pods Manifest.lock */,
 				7F358E7D2914171D0099FD1A /* Sources */,
 				7F358E7E2914171D0099FD1A /* Frameworks */,
 				7F358E7F2914171D0099FD1A /* Resources */,
+				0A534508D73C77FA1CC199EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,6 +288,7 @@
 				TargetAttributes = {
 					7F358E662914171B0099FD1A = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 					7F358E762914171D0099FD1A = {
 						CreatedOnToolsVersion = 14.1;
@@ -284,6 +349,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A534508D73C77FA1CC199EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PithTV-PithTVUITests/Pods-PithTV-PithTVUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PithTV-PithTVUITests/Pods-PithTV-PithTVUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PithTV-PithTVUITests/Pods-PithTV-PithTVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98C42C73A480112D58BCBDB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PithTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		992FD2BD067EDA4A86392A81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PithTVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CEDBCC52694C1E604F6DAE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PithTV/Pods-PithTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PithTV/Pods-PithTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PithTV/Pods-PithTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3AA33A6AF3425A94F5D8B68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PithTV-PithTVUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7F358E632914171B0099FD1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -291,7 +459,10 @@
 			files = (
 				7F358E6D2914171B0099FD1A /* ContentView.swift in Sources */,
 				7FE7A25F291651DE00B322B0 /* Ribbon.swift in Sources */,
+				7FE7A26729168B4000B322B0 /* VlcPlayer.swift in Sources */,
+				7FE7A26929168B9400B322B0 /* VlcPlayerView.swift in Sources */,
 				7FE7A25D2915982200B322B0 /* ModelData.swift in Sources */,
+				7FE7A2912916E7D100B322B0 /* VideoView.swift in Sources */,
 				7FE7A259291595FA00B322B0 /* Channel.swift in Sources */,
 				7FE7A2612916521A00B322B0 /* RibbonItem.swift in Sources */,
 				7F358E6B2914171B0099FD1A /* PithTVApp.swift in Sources */,
@@ -447,12 +618,15 @@
 		};
 		7F358E8C2914171D0099FD1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 312513E9B40E84DA481F41A3 /* Pods-PithTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PithTV/Preview Content\"";
+				DEVELOPMENT_TEAM = 7MHLQ7AVV3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -465,6 +639,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.pithmediaserver.PithTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PithTV/PithTV-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
@@ -472,12 +648,15 @@
 		};
 		7F358E8D2914171D0099FD1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B06843D632078128AC4A0B3C /* Pods-PithTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PithTV/Preview Content\"";
+				DEVELOPMENT_TEAM = 7MHLQ7AVV3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,6 +669,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.pithmediaserver.PithTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PithTV/PithTV-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
@@ -497,6 +677,7 @@
 		};
 		7F358E8F2914171D0099FD1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B2F14CB45A7EF0E1C1A019 /* Pods-PithTVTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +697,7 @@
 		};
 		7F358E902914171D0099FD1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C295D500F73FA6BFEF0714 /* Pods-PithTVTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +717,7 @@
 		};
 		7F358E922914171D0099FD1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F48E07C5E8DD807908E67B /* Pods-PithTV-PithTVUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +735,7 @@
 		};
 		7F358E932914171D0099FD1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE836EADC798C23E499A9B8E /* Pods-PithTV-PithTVUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

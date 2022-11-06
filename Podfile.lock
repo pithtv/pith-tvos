@@ -1,0 +1,16 @@
+PODS:
+  - TVVLCKit (3.4.0)
+
+DEPENDENCIES:
+  - TVVLCKit (= 3.4.0)
+
+SPEC REPOS:
+  trunk:
+    - TVVLCKit
+
+SPEC CHECKSUMS:
+  TVVLCKit: fe80e9f1eff6efdedeab9b0dcba360e0225c9bdc
+
+PODFILE CHECKSUM: 59abc826e4227932f1e9ea43ddebf58baf2c3dfd
+
+COCOAPODS: 1.11.3
