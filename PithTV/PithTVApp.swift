@@ -11,7 +11,7 @@ import SwiftUI
 struct PithTVApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(pith: Pith(baseUrl: URL(string: "http://horace:3333")!))
         }
     }
 }

@@ -27,10 +27,10 @@ struct ChannelItem : Codable, Identifiable {
     var creationTime: String?
     var modificationTime: String?
     var type: ItemType = .file
-    var id: String?
+    var id: String
     var title: String
     var overview: String?
-    var genre: String?
+    var genre: [String]?
     var mimetype: String?
     var playable: Bool?
     var fileSize: UInt?
@@ -46,4 +46,13 @@ struct ChannelItem : Codable, Identifiable {
 //    var subtitles: Subtitle[]?
 //    var playState: IPlayState?
     var releaseDate: String?
+}
+
+struct ItemAndStream : Codable {
+    var item: ChannelItem
+    var stream: Stream
+}
+
+struct Stream : Codable {
+    var url: String
 }
