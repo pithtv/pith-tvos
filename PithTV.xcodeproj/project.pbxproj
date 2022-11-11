@@ -10,6 +10,8 @@
 		5D32D03A0570C24654540739 /* Pods_PithTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5510FA77A3BD07C6725ECD /* Pods_PithTVTests.framework */; };
 		6D6FABB3572E52824D6DA65F /* Pods_PithTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A230DC02DB9BFC1801D915 /* Pods_PithTV.framework */; };
 		7F254185291ED4E000A8EFBB /* BonjourResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F254184291ED4E000A8EFBB /* BonjourResolver.swift */; };
+		7F254187291EDBD500A8EFBB /* ChannelBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F254186291EDBD500A8EFBB /* ChannelBrowser.swift */; };
+		7F254189291EE70800A8EFBB /* ChannelItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F254188291EE70800A8EFBB /* ChannelItemDetails.swift */; };
 		7F358E6B2914171B0099FD1A /* PithTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E6A2914171B0099FD1A /* PithTVApp.swift */; };
 		7F358E6D2914171B0099FD1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E6C2914171B0099FD1A /* ContentView.swift */; };
 		7F358E6F2914171C0099FD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F358E6E2914171C0099FD1A /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		312513E9B40E84DA481F41A3 /* Pods-PithTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PithTV.debug.xcconfig"; path = "Target Support Files/Pods-PithTV/Pods-PithTV.debug.xcconfig"; sourceTree = "<group>"; };
 		47B2F14CB45A7EF0E1C1A019 /* Pods-PithTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PithTVTests.debug.xcconfig"; path = "Target Support Files/Pods-PithTVTests/Pods-PithTVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F254184291ED4E000A8EFBB /* BonjourResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourResolver.swift; sourceTree = "<group>"; };
+		7F254186291EDBD500A8EFBB /* ChannelBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelBrowser.swift; sourceTree = "<group>"; };
+		7F254188291EE70800A8EFBB /* ChannelItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelItemDetails.swift; sourceTree = "<group>"; };
 		7F358E672914171B0099FD1A /* PithTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PithTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F358E6A2914171B0099FD1A /* PithTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PithTVApp.swift; sourceTree = "<group>"; };
 		7F358E6C2914171B0099FD1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -211,6 +215,8 @@
 				7FE7A26629168B4000B322B0 /* VlcPlayer.swift */,
 				7FE7A26829168B9400B322B0 /* VlcPlayerView.swift */,
 				7FE7A2902916E7D100B322B0 /* VideoView.swift */,
+				7F254186291EDBD500A8EFBB /* ChannelBrowser.swift */,
+				7F254188291EE70800A8EFBB /* ChannelItemDetails.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -481,10 +487,12 @@
 				7FE7A25F291651DE00B322B0 /* Ribbon.swift in Sources */,
 				7FE7A2962917F92500B322B0 /* Pith.swift in Sources */,
 				7FE7A26729168B4000B322B0 /* VlcPlayer.swift in Sources */,
+				7F254189291EE70800A8EFBB /* ChannelItemDetails.swift in Sources */,
 				7FE7A26929168B9400B322B0 /* VlcPlayerView.swift in Sources */,
 				7FE7A25D2915982200B322B0 /* ModelData.swift in Sources */,
 				7FE7A2912916E7D100B322B0 /* VideoView.swift in Sources */,
 				7FE7A259291595FA00B322B0 /* Channel.swift in Sources */,
+				7F254187291EDBD500A8EFBB /* ChannelBrowser.swift in Sources */,
 				7FE7A2612916521A00B322B0 /* RibbonItem.swift in Sources */,
 				7F358E6B2914171B0099FD1A /* PithTVApp.swift in Sources */,
 				7FE7A2942917F01D00B322B0 /* PithClient.swift in Sources */,

@@ -35,6 +35,10 @@ class Pith : ObservableObject {
         return try await client.queryItemAndStream(channel: channel, itemId: itemId);
     }
     
+    func listChannel(channelId: String, containerId: String?) async throws -> [ChannelItem] {
+        return try await client.queryChannelItems(channelId: channelId, containerId: containerId)
+    }
+    
     func imgUrl(_ url: String) -> URL {
         let url = URL(string: "\(baseUrl.absoluteString)/scale/\(url)?size=original")
         return url!;

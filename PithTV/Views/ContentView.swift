@@ -42,7 +42,7 @@ struct ContentView: View {
                         HStack() {
                             ForEach(pith.channels ?? []) {
                                 channel in
-                                NavigationLink(channel.title, destination: Text("Test"))
+                                NavigationLink(channel.title, destination: ChannelBrowser(pith: pith, channelId: channel.id))
                             }
                         }
                     }

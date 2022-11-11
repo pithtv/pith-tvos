@@ -32,12 +32,17 @@ public actor PithClient {
         return try await get(url: "/rest/ribbons/\(id)")
     }
     
+    func queryChannelItems(channelId: String, containerId: String?) async throws -> [ChannelItem] {
+        return try await get(url: "/rest/channel/\(channelId)/list/\(containerId ?? "")")
+    }
+    
     private func get<T: Decodable>(url: String) async throws -> T {
         return try await send(request: try makeRequest(url: url, method: "GET"))
     }
     
     private func makeRequest(url: String, method: String) throws -> URLRequest {
-        var request: URLRequest = URLRequest(url: baseUrl.appending(path: url))
+        let targetUrl = baseUrl.appending(path: url, directoryHint: .notDirectory)
+        var request: URLRequest = URLRequest(url: targetUrl)
         request.httpMethod = method
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         return request

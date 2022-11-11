@@ -3,4 +3,258 @@
    uuid = "2425E24F-ACF2-4EB4-870B-B20E8A9619E7"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F399DED4-8B18-4F12-BDFC-9EE15CC97891"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PithTV/Views/ChannelBrowser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "F399DED4-8B18-4F12-BDFC-9EE15CC97891 - 3529ae77dfc4eddd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async -&gt; () in PithTV.ChannelBrowser.body.getter : some"
+                  moduleName = "PithTV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ccantill/Documents/PithTV/PithTV/Views/ChannelBrowser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "F399DED4-8B18-4F12-BDFC-9EE15CC97891 - d0df0eb25c8f0739"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for closure #1 @Sendable () async -&gt; () in PithTV.ChannelBrowser.body.getter : some"
+                  moduleName = "PithTV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ccantill/Documents/PithTV/PithTV/Views/ChannelBrowser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "F399DED4-8B18-4F12-BDFC-9EE15CC97891 - dc83edb4f58b8f83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for closure #1 @Sendable () async -&gt; () in PithTV.ChannelBrowser.body.getter : some"
+                  moduleName = "PithTV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ccantill/Documents/PithTV/PithTV/Views/ChannelBrowser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "F399DED4-8B18-4F12-BDFC-9EE15CC97891 - c186e5f44bff6d84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in PithTV.ChannelBrowser.body.getter : some"
+                  moduleName = "PithTV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ccantill/Documents/PithTV/PithTV/Views/ChannelBrowser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7EE7BDDB-BD6E-467A-876A-880F658C0199"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PithTV/Views/ChannelBrowser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "7EE7BDDB-BD6E-467A-876A-880F658C0199 - c186e5f44bff6d42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in PithTV.ChannelBrowser.body.getter : some"
+                  moduleName = "PithTV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ccantill/Documents/PithTV/PithTV/Views/ChannelBrowser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "7EE7BDDB-BD6E-467A-876A-880F658C0199 - c186e5f44bff6d42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in PithTV.ChannelBrowser.body.getter : some"
+                  moduleName = "PithTV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ccantill/Documents/PithTV/PithTV/Views/ChannelBrowser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "248">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD8163F5-83C3-4B28-8D54-D14444638BFF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PithTV/Pith/PithClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "queryChannelItems(channelId:containerId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DD8163F5-83C3-4B28-8D54-D14444638BFF - 276ebb8af0d0b844"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for PithTV.PithClient.queryChannelItems(channelId: Swift.String, containerId: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; Swift.Array&lt;PithTV.ChannelItem&gt;"
+                  moduleName = "PithTV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ccantill/Documents/PithTV/PithTV/Pith/PithClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "DD8163F5-83C3-4B28-8D54-D14444638BFF - fcb555e000460e65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for PithTV.PithClient.queryChannelItems(channelId: Swift.String, containerId: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; Swift.Array&lt;PithTV.ChannelItem&gt;"
+                  moduleName = "PithTV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ccantill/Documents/PithTV/PithTV/Pith/PithClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "DD8163F5-83C3-4B28-8D54-D14444638BFF - 72cae5ee5b3e7446"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for PithTV.PithClient.queryChannelItems(channelId: Swift.String, containerId: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; Swift.Array&lt;PithTV.ChannelItem&gt;"
+                  moduleName = "PithTV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ccantill/Documents/PithTV/PithTV/Pith/PithClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "DD8163F5-83C3-4B28-8D54-D14444638BFF - 671b32c1882ad247"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for PithTV.PithClient.queryChannelItems(channelId: Swift.String, containerId: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; Swift.Array&lt;PithTV.ChannelItem&gt;"
+                  moduleName = "PithTV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ccantill/Documents/PithTV/PithTV/Pith/PithClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C39F0E5-F770-4EC5-8444-FC4C75589E8E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PithTV/Pith/PithClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "makeRequest(url:method:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45E17A8F-A408-4C6C-B311-76CB626F3062"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PithTV/Views/ChannelBrowser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C76B98FF-6964-4AEE-963C-A74FD899E18A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PithTV/Views/ChannelBrowser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -23,7 +23,6 @@ struct ItemImage : Codable {
     var language: String?
 }
 struct ChannelItem : Codable, Identifiable {
-
     var creationTime: String?
     var modificationTime: String?
     var type: ItemType = .file
