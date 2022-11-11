@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5D32D03A0570C24654540739 /* Pods_PithTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5510FA77A3BD07C6725ECD /* Pods_PithTVTests.framework */; };
 		6D6FABB3572E52824D6DA65F /* Pods_PithTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A230DC02DB9BFC1801D915 /* Pods_PithTV.framework */; };
+		7F254185291ED4E000A8EFBB /* BonjourResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F254184291ED4E000A8EFBB /* BonjourResolver.swift */; };
 		7F358E6B2914171B0099FD1A /* PithTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E6A2914171B0099FD1A /* PithTVApp.swift */; };
 		7F358E6D2914171B0099FD1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E6C2914171B0099FD1A /* ContentView.swift */; };
 		7F358E6F2914171C0099FD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F358E6E2914171C0099FD1A /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		312513E9B40E84DA481F41A3 /* Pods-PithTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PithTV.debug.xcconfig"; path = "Target Support Files/Pods-PithTV/Pods-PithTV.debug.xcconfig"; sourceTree = "<group>"; };
 		47B2F14CB45A7EF0E1C1A019 /* Pods-PithTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PithTVTests.debug.xcconfig"; path = "Target Support Files/Pods-PithTVTests/Pods-PithTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F254184291ED4E000A8EFBB /* BonjourResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourResolver.swift; sourceTree = "<group>"; };
 		7F358E672914171B0099FD1A /* PithTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PithTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F358E6A2914171B0099FD1A /* PithTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PithTVApp.swift; sourceTree = "<group>"; };
 		7F358E6C2914171B0099FD1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		7FE7A2902916E7D100B322B0 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		7FE7A2932917F01D00B322B0 /* PithClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PithClient.swift; sourceTree = "<group>"; };
 		7FE7A2952917F92500B322B0 /* Pith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pith.swift; sourceTree = "<group>"; };
+		7FE7A299291824CB00B322B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B06843D632078128AC4A0B3C /* Pods-PithTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PithTV.release.xcconfig"; path = "Target Support Files/Pods-PithTV/Pods-PithTV.release.xcconfig"; sourceTree = "<group>"; };
 		BE836EADC798C23E499A9B8E /* Pods-PithTV-PithTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PithTV-PithTVUITests.release.xcconfig"; path = "Target Support Files/Pods-PithTV-PithTVUITests/Pods-PithTV-PithTVUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CDC9DADF01637FFCCDD19E47 /* Pods_PithTV_PithTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PithTV_PithTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,10 +152,12 @@
 		7F358E692914171B0099FD1A /* PithTV */ = {
 			isa = PBXGroup;
 			children = (
+				7FE7A299291824CB00B322B0 /* Info.plist */,
 				7FE7A2922917F01100B322B0 /* Pith */,
 				7FE7A28F2916E79700B322B0 /* Views */,
 				7FE7A257291595EA00B322B0 /* Model */,
 				7F358E6A2914171B0099FD1A /* PithTVApp.swift */,
+				7F254184291ED4E000A8EFBB /* BonjourResolver.swift */,
 				7F358E6E2914171C0099FD1A /* Assets.xcassets */,
 				7F358E702914171C0099FD1A /* Preview Content */,
 				7FE7A26C29168CF100B322B0 /* PithTV-Bridging-Header.h */,
@@ -472,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F358E6D2914171B0099FD1A /* ContentView.swift in Sources */,
+				7F254185291ED4E000A8EFBB /* BonjourResolver.swift in Sources */,
 				7FE7A25F291651DE00B322B0 /* Ribbon.swift in Sources */,
 				7FE7A2962917F92500B322B0 /* Pith.swift in Sources */,
 				7FE7A26729168B4000B322B0 /* VlcPlayer.swift in Sources */,
@@ -645,6 +651,8 @@
 				DEVELOPMENT_TEAM = 7MHLQ7AVV3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PithTV/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -659,6 +667,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
 			};
 			name = Debug;
 		};
@@ -675,6 +684,8 @@
 				DEVELOPMENT_TEAM = 7MHLQ7AVV3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PithTV/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -688,6 +699,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "PithTV/PithTV-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
 			};
 			name = Release;
 		};
