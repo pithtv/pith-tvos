@@ -16,6 +16,10 @@ enum ItemType : String, Codable {
     case container, file
 }
 
+enum MediaItemType : String, Codable {
+    case movie, show, season, episode
+}
+
 struct ItemImage : Codable {
     var url: String
     var width: Int?
@@ -23,10 +27,12 @@ struct ItemImage : Codable {
     var language: String?
 }
 struct ChannelItem : Codable, Identifiable {
+    var id: String
     var creationTime: String?
     var modificationTime: String?
     var type: ItemType = .file
-    var id: String
+    var mediatype: MediaItemType?
+    var rating: Float?
     var title: String
     var overview: String?
     var genre: [String]?
@@ -35,9 +41,6 @@ struct ChannelItem : Codable, Identifiable {
     var fileSize: UInt?
     var dateScanned: String?
     var unavailable: Bool?
-    var backdrop: String?
-    var poster: String?
-    var banner: String?
     var banners: [ItemImage]?
     var posters: [ItemImage]?
     var backdrops: [ItemImage]?

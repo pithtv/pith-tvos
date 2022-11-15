@@ -12,10 +12,10 @@ struct RibbonItemView : View {
     var ribbonItem: RibbonItem
     
     var body: some View {
+        if let poster = ribbonItem.item.posters?[0] {
         NavigationLink(destination: {VideoView(pith: pith, channel: ribbonItem.channelId, itemId: ribbonItem.item.id)}) {
-            if let poster = ribbonItem.item.poster {
                 AsyncImage(
-                    url: pith.imgUrl(poster),
+                    url: pith.imgUrl(poster.url),
                     content: {
                         img in img
                             .resizable()
@@ -26,8 +26,8 @@ struct RibbonItemView : View {
                     })
                 .frame(width: 200, height: 300)
             }
-        }
         .buttonStyle(CardButtonStyle())
+        }
     }
 }
 
@@ -37,15 +37,15 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 40) {
                     ScrollView(.horizontal) {
                         HStack() {
                             ForEach(pith.channels ?? []) {
                                 channel in
                                 NavigationLink(channel.title, destination: ChannelBrowser(pith: pith, channelId: channel.id))
                             }
-                        }
-                    }
+                        }.padding(40)
+                    }.padding(-40)
                     ForEach(pith.ribbons ?? []) {
                         ribbon in
                         Text(ribbon.name)
@@ -55,11 +55,12 @@ struct ContentView: View {
                                     ribbonItem in
                                     RibbonItemView(pith: pith, ribbonItem: ribbonItem)
                                 }
-                            }
+                            }.padding(.all, 40)
                         }
+                        .padding(.all, -40)
                     }
-                }
-            }
+                }.padding(80)
+            }.padding(-80)
         }
         .task {
             do {

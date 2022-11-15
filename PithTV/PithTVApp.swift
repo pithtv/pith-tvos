@@ -26,7 +26,7 @@ struct PithTVApp: App {
                         for result in results {
                             print(result)
                             switch(result.endpoint) {
-                            case let .service(name, type, domain, interface):
+                            case let .service(name, type, domain, _):
                                 print("Service")
                                 
                                 let service = NetService(domain: domain, type: type, name: name)

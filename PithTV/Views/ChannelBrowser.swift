@@ -30,30 +30,44 @@ struct ChannelBrowser: View {
             }
         } else {
             ScrollView {
-                if item != nil {
-                    ChannelItemDetails(pith: pith, channelId: channelId, item: item!)
-                }
-                if(children != nil) {
-                    LazyVGrid(columns: adaptiveColumns) {
-                        ForEach(children!) {childItem in
-                            NavigationLink(destination: ChannelBrowser(
-                                pith: pith,
-                                channelId: channelId,
-                                item: childItem
-                            )) {
+                VStack {
+                    if item != nil {
+                        ChannelItemDetails(pith: pith, channelId: channelId, item: item!)
+                    }
+                    if(children != nil) {
+                        switch(item?.mediatype) {
+                        case .show, .season:
+                            ForEach(children!) {
+                                childItem in
                                 
-                                if let poster = childItem.poster {
-                                    AsyncImage(url: pith.imgUrl(poster),
-                                               content: {
-                                        img in img
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fill)
-                                    },
-                                               placeholder: {
-                                        ProgressView()
-                                    })
-                                } else {
+                                NavigationLink(destination: ChannelBrowser(pith: pith, channelId: channelId, item: childItem)) {
                                     Text(childItem.title)
+                                }
+                            }
+                        default:
+                            LazyVGrid(columns: adaptiveColumns) {
+                                ForEach(children!) {childItem in
+                                    NavigationLink(destination: ChannelBrowser(
+                                        pith: pith,
+                                        channelId: channelId,
+                                        item: childItem
+                                    )) {
+                                        
+                                        if let poster = childItem.posters?[0] {
+                                            AsyncImage(url: pith.imgUrl(poster.url),
+                                                       content: {
+                                                img in img
+                                                    .resizable()
+                                                    .aspectRatio(contentMode: .fill)
+                                            },
+                                                       placeholder: {
+                                                ProgressView()
+                                            })
+                                            .frame(width: 260, height: 390)
+                                        } else {
+                                            Text(childItem.title)
+                                        }
+                                    }.buttonStyle(CardButtonStyle())
                                 }
                             }
                         }
@@ -66,7 +80,7 @@ struct ChannelBrowser: View {
 
 struct ChannelBrowser_Previews: PreviewProvider {
     static var previews: some View {
-        ChannelBrowser(pith: Pith(baseUrl: URL(string: "http://horace:3333")!), channelId: "files")
+        ChannelBrowser(pith: Pith(baseUrl: URL(string: "http://horace:3333")!), channelId: "radarr", children: radarr)
     }
 
 }
