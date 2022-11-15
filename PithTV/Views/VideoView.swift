@@ -14,23 +14,25 @@ class PlayerState : ObservableObject {
     @Published var totalTimeString: String?
     @Published var totalTime: Int32?
     @State var playerTimeChangedNotification: NSObjectProtocol?
-    var player: VLCMediaPlayer?
+    @Published var player: VLCMediaPlayer?
     
     init() {
         
     }
     
-    func load() {
+    func load() -> VLCMediaPlayer {
         self.player = VLCMediaPlayer()
         self.playerTimeChangedNotification = NotificationCenter.default.addObserver(
             forName: Notification.Name(rawValue: VLCMediaPlayerTimeChanged),
             object: player,
             queue: nil,
             using: self.playerTimeChanged)
+        return self.player!
     }
     
     func unload() {
         NotificationCenter.default.removeObserver(playerTimeChangedNotification as Any)
+        self.player = nil
     }
     
     func playerTimeChanged(_ notification: Notification) {
@@ -65,14 +67,32 @@ struct VideoView: View {
         }
     }
     
+    func handleMoveCommand(dir: MoveCommandDirection)
+    {
+        switch(dir) {
+        case .up:
+            isShowInfoPanel = true
+        case .left:
+            isShowInfoPanel = true
+            state.player?.jumpBackward(10)
+        case .right:
+            isShowInfoPanel = true
+            state.player?.jumpForward(10)
+        case .down:
+            isShowInfoPanel = false
+        default:
+            print("Unrecognized direction \(dir)")
+        }
+    }
+    
     var body: some View {
         if(error != nil) {
             Text(error!)
         } else {
             ZStack
             {
-                if(state.player != nil) {
-                    VlcPlayer(player: state.player!)
+                if let player = state.player {
+                    VlcPlayer(player: player)
                         .fullScreenCover(isPresented: $isShowInfoPanel)
                     {
                         VStack {
@@ -106,9 +126,12 @@ struct VideoView: View {
                             .background(.ultraThinMaterial)
                         }
                         .focusable()
+                        .onMoveCommand(perform: handleMoveCommand)
                         .onPlayPauseCommand {
                             playPauseVideo()
                         }
+                    }.onAppear{
+                        player.play()
                     }
                 } else {
                     ProgressView()
@@ -118,9 +141,8 @@ struct VideoView: View {
             .task {
                 do {
                     let stream = try await pith.queryItemAndStream(channel: channel, itemId: itemId);
-                    state.load()
-                    state.player!.media = VLCMedia(url: URL(string: stream.stream.url)!)
-                    state.player!.play()
+                    let player = state.load()
+                    player.media = VLCMedia(url: URL(string: stream.stream.url)!)
                 } catch let e {
                     print(e)
                     error = "An unknown error occured \(e)"
@@ -133,6 +155,8 @@ struct VideoView: View {
             }
             
             .focusable()
+            
+            .onMoveCommand(perform: handleMoveCommand)
             
             // on press action
             .onLongPressGesture(minimumDuration: 0.01, perform:

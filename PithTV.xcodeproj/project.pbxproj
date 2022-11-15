@@ -21,6 +21,7 @@
 		7F358E882914171D0099FD1A /* PithTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F358E872914171D0099FD1A /* PithTVUITestsLaunchTests.swift */; };
 		7F5B75A62922BC7E0093073F /* jurassicpark.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F5B75A52922BC7E0093073F /* jurassicpark.json */; };
 		7F6FABF42923D98500DFCD13 /* radarr.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F6FABF32923D98500DFCD13 /* radarr.json */; };
+		7F6FABF82923E1F700DFCD13 /* DragGestureActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6FABF72923E1F700DFCD13 /* DragGestureActions.swift */; };
 		7FE7A259291595FA00B322B0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7A258291595FA00B322B0 /* Channel.swift */; };
 		7FE7A25B291596CE00B322B0 /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FE7A25A291596CE00B322B0 /* channels.json */; };
 		7FE7A25D2915982200B322B0 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7A25C2915982200B322B0 /* ModelData.swift */; };
@@ -71,6 +72,7 @@
 		7F358E872914171D0099FD1A /* PithTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PithTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7F5B75A52922BC7E0093073F /* jurassicpark.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jurassicpark.json; sourceTree = "<group>"; };
 		7F6FABF32923D98500DFCD13 /* radarr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = radarr.json; sourceTree = "<group>"; };
+		7F6FABF72923E1F700DFCD13 /* DragGestureActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureActions.swift; sourceTree = "<group>"; };
 		7FE7A258291595FA00B322B0 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		7FE7A25A291596CE00B322B0 /* channels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
 		7FE7A25C2915982200B322B0 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				7FE7A2902916E7D100B322B0 /* VideoView.swift */,
 				7F254186291EDBD500A8EFBB /* ChannelBrowser.swift */,
 				7F254188291EE70800A8EFBB /* ChannelItemDetails.swift */,
+				7F6FABF72923E1F700DFCD13 /* DragGestureActions.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				7FE7A26729168B4000B322B0 /* VlcPlayer.swift in Sources */,
 				7F254189291EE70800A8EFBB /* ChannelItemDetails.swift in Sources */,
 				7FE7A26929168B9400B322B0 /* VlcPlayerView.swift in Sources */,
+				7F6FABF82923E1F700DFCD13 /* DragGestureActions.swift in Sources */,
 				7FE7A25D2915982200B322B0 /* ModelData.swift in Sources */,
 				7FE7A2912916E7D100B322B0 /* VideoView.swift in Sources */,
 				7FE7A259291595FA00B322B0 /* Channel.swift in Sources */,
