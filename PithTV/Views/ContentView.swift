@@ -13,7 +13,7 @@ struct RibbonItemView : View {
     
     var body: some View {
         if let poster = ribbonItem.item.posters?[0] {
-        NavigationLink(destination: {VideoView(pith: pith, channel: ribbonItem.channelId, itemId: ribbonItem.item.id)}) {
+        NavigationLink(destination: {VideoView(pith: pith, channel: ribbonItem.channelId, item: ribbonItem.item)}) {
                 AsyncImage(
                     url: pith.imgUrl(poster.url),
                     content: {

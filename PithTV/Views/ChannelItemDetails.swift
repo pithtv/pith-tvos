@@ -42,7 +42,7 @@ struct ChannelItemDetails : View {
                     }
                     Text(item.overview ?? "")
                     if(item.playable ?? false) {
-                        NavigationLink(destination: VideoView(pith: pith, channel: channelId, itemId: item.id)) {
+                        NavigationLink(destination: VideoView(pith: pith, channel: channelId, item: item)) {
                             Text("Play")
                         }
                     }

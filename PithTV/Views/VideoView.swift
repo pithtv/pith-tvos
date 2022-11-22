@@ -43,13 +43,38 @@ class PlayerState : ObservableObject {
     }
 }
 
+struct AudioLanguageSettings: View {
+    var player: VLCMediaPlayer
+    
+    var body: some View {
+        List(1..<Int(player.numberOfAudioTracks), id: \.self) {
+            idx in Button(player.audioTrackNames[idx] as! String,
+                          action: {player.currentAudioTrackIndex = player.audioTrackIndexes[idx] as! Int32})
+        }
+    }
+}
+
+struct SubtitleSettings: View {
+    var player: VLCMediaPlayer
+    
+    var body: some View {
+        let subCount = Int(player.numberOfSubtitlesTracks)
+        List(0..<subCount, id: \.self) {
+            idx in Button(player.videoSubTitlesNames[idx] as! String,
+                          action: {player.currentVideoSubTitleIndex = player.videoSubTitlesIndexes[idx] as! Int32})
+        }
+    }
+}
+
 struct VideoView: View {
     var pith: Pith
     var channel: String
-    var itemId: String
+    var item: ChannelItem
     
     @State var isShowInfoPanel: Bool = false
+    @State var isShowSettingsPanel: Bool = false
     @State var error: String?
+    var autoPlay = true
     
     @ObservedObject var state: PlayerState = PlayerState()
     
@@ -97,6 +122,11 @@ struct VideoView: View {
                     {
                         VStack {
                             Spacer()
+                            HStack {
+                                Text(item.title)
+                                Spacer()
+                                Button("Settings", action: {isShowSettingsPanel = true})
+                            }
                             HStack(spacing: 10){
                                 Text(state.currentTimeString ?? "--:--")
                                     .frame(width: 160)
@@ -119,19 +149,29 @@ struct VideoView: View {
                                     .edgesIgnoringSafeArea(.all)
                                 
                             }
+                            .focusable()
+                            .onMoveCommand(perform: handleMoveCommand)
                             .padding()
                             .frame(
                                 width: UIScreen.main.bounds.width)
                             .edgesIgnoringSafeArea(.all)
                             .background(.ultraThinMaterial)
                         }
-                        .focusable()
-                        .onMoveCommand(perform: handleMoveCommand)
                         .onPlayPauseCommand {
                             playPauseVideo()
+                        }.fullScreenCover(isPresented: $isShowSettingsPanel) {
+                            TabView {
+                                AudioLanguageSettings(player: player)
+                                    .tabItem({Label("Audio", systemImage: "audio")})
+                                
+                                SubtitleSettings(player: player)
+                                    .tabItem({Label("Subtitles", systemImage: "subtitles")})
+                            }
                         }
                     }.onAppear{
-                        player.play()
+                        if self.autoPlay {
+                            player.play()
+                        }
                     }
                 } else {
                     ProgressView()
@@ -140,7 +180,7 @@ struct VideoView: View {
             }
             .task {
                 do {
-                    let stream = try await pith.queryItemAndStream(channel: channel, itemId: itemId);
+                    let stream = try await pith.queryItemAndStream(channel: channel, itemId: item.id)
                     let player = state.load()
                     player.media = VLCMedia(url: URL(string: stream.stream.url)!)
                 } catch let e {
@@ -180,7 +220,7 @@ class PithMock : Pith {
 
 struct VideoView_Previews: PreviewProvider {
     static var previews: some View {
-        VideoView(pith: PithMock(baseUrl: URL(string: "http://horace:3333")!), channel: "files", itemId: "test").padding()
+        VideoView(pith: PithMock(baseUrl: URL(string: "http://horace:3333")!), channel: "radarr", item: jurassicPark, isShowInfoPanel: true, autoPlay: false)
     }
 }
 
