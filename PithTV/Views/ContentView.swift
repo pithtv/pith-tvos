@@ -13,7 +13,7 @@ struct RibbonItemView : View {
     
     var body: some View {
         if let poster = ribbonItem.item.posters?[0] {
-        NavigationLink(destination: {VideoView(pith: pith, channel: ribbonItem.channelId, item: ribbonItem.item)}) {
+            NavigationLink(destination: {VideoView(pith: pith, channel: ribbonItem.channelId, item: ribbonItem.item)}) {
                 AsyncImage(
                     url: pith.imgUrl(poster.url),
                     content: {
@@ -22,17 +22,46 @@ struct RibbonItemView : View {
                             .aspectRatio(contentMode: .fill)
                     },
                     placeholder: {
-                        ProgressView()
+                        ProgressView().frame(width: 200, height: 300)
                     })
                 .frame(width: 200, height: 300)
             }
-        .buttonStyle(CardButtonStyle())
+            .buttonStyle(CardButtonStyle())
         }
     }
 }
 
+extension RibbonItem : Hashable {
+    static func == (lhs: RibbonItem, rhs: RibbonItem) -> Bool {
+        return lhs.channelId == rhs.channelId && lhs.item.id == rhs.item.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(channelId)
+        hasher.combine(item.id)
+    }
+}
+
+func Backdrop(pith: Pith, item: ChannelItem?) -> some View {
+    if let img = item?.backdrops?.first {
+        return AnyView(AsyncImage(
+            url: pith.imgUrl(img.url),
+            content: { img in img
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .padding(-40)
+            },
+            placeholder: {EmptyView()})
+            .ignoresSafeArea(.all)
+            .blur(radius: 10))
+    }
+    return AnyView(EmptyView())
+}
+
 struct ContentView: View {
     @ObservedObject var pith: Pith
+    
+    @FocusState var ribbonItem: RibbonItem?
     
     var body: some View {
         NavigationView {
@@ -54,6 +83,7 @@ struct ContentView: View {
                                 ForEach(pith.ribbonItems[ribbon.id] ?? [], id: \.item.id) {
                                     ribbonItem in
                                     RibbonItemView(pith: pith, ribbonItem: ribbonItem)
+                                        .focused($ribbonItem, equals: ribbonItem)
                                 }
                             }.padding(.all, 40)
                         }
@@ -62,6 +92,9 @@ struct ContentView: View {
                 }.padding(80)
             }.padding(-80)
         }
+        .background(
+            Backdrop(pith: pith, item: ribbonItem?.item)
+        )
         .task {
             do {
                 try await pith.load()

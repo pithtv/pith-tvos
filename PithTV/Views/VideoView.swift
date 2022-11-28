@@ -125,7 +125,9 @@ struct VideoView: View {
                             HStack {
                                 Text(item.title)
                                 Spacer()
-                                Button("Settings", action: {isShowSettingsPanel = true})
+                                Button(action: {isShowSettingsPanel = true}) {
+                                    Label("Settings", systemImage: "gearshape")
+                                }
                             }
                             HStack(spacing: 10){
                                 Text(state.currentTimeString ?? "--:--")
@@ -156,16 +158,20 @@ struct VideoView: View {
                                 width: UIScreen.main.bounds.width)
                             .edgesIgnoringSafeArea(.all)
                             .background(.ultraThinMaterial)
+                            .dragGestures(
+                                onDragRight: { print("right")},
+                                onDragLeft: { print("left")}
+                            )
                         }
                         .onPlayPauseCommand {
                             playPauseVideo()
                         }.fullScreenCover(isPresented: $isShowSettingsPanel) {
                             TabView {
                                 AudioLanguageSettings(player: player)
-                                    .tabItem({Label("Audio", systemImage: "audio")})
+                                    .tabItem({Label("Audio", systemImage: "speaker.wave.2.bubble.left")})
                                 
                                 SubtitleSettings(player: player)
-                                    .tabItem({Label("Subtitles", systemImage: "subtitles")})
+                                    .tabItem({Label("Subtitles", systemImage: "captions.bubble")})
                             }
                         }
                     }.onAppear{
@@ -220,7 +226,7 @@ class PithMock : Pith {
 
 struct VideoView_Previews: PreviewProvider {
     static var previews: some View {
-        VideoView(pith: PithMock(baseUrl: URL(string: "http://horace:3333")!), channel: "radarr", item: jurassicPark, isShowInfoPanel: true, autoPlay: false)
+        VideoView(pith: PithMock(baseUrl: URL(string: "http://horace:3333")!), channel: "radarr", item: jurassicPark, isShowInfoPanel: true, isShowSettingsPanel: true, autoPlay: false)
     }
 }
 

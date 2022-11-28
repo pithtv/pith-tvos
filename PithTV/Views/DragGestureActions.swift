@@ -60,6 +60,10 @@ struct DragGestureActions: ViewModifier
         content
             .onAppear(perform: {
                 let gcController = GCController.controllers().first
+                if gcController == nil {
+                    return;
+                }
+                
                 let microGamepad = gcController!.microGamepad
                 microGamepad!.reportsAbsoluteDpadValues = true // assumes the location where the user first touches the pad is the origin value (0.0,0.0)
                 currentHandler = microGamepad!.dpad.valueChangedHandler

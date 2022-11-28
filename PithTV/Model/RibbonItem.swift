@@ -26,7 +26,7 @@ struct ItemImage : Codable {
     var height: Int?
     var language: String?
 }
-struct ChannelItem : Codable, Identifiable {
+struct ChannelItem : Codable, Identifiable, Hashable {
     var id: String
     var creationTime: String?
     var modificationTime: String?
@@ -48,6 +48,24 @@ struct ChannelItem : Codable, Identifiable {
 //    var subtitles: Subtitle[]?
 //    var playState: IPlayState?
     var releaseDate: String?
+    
+    func getReleaseDate() -> Date? {
+        if let date = releaseDate {
+            return Formatter.iso8601withFractionalSeconds.date(from: date)
+        }
+        return nil
+    }
+    
+    var seasons: [ChannelItem]?
+    var episodes : [ChannelItem]?
+    
+    static func == (lhs: ChannelItem, rhs: ChannelItem) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
 
 struct ItemAndStream : Codable {
@@ -57,4 +75,14 @@ struct ItemAndStream : Codable {
 
 struct Stream : Codable {
     var url: String
+}
+
+extension ISO8601DateFormatter {
+    convenience init(_ formatOptions: Options) {
+        self.init()
+        self.formatOptions = formatOptions
+    }
+}
+extension Formatter {
+    static let iso8601withFractionalSeconds = ISO8601DateFormatter([.withInternetDateTime, .withFractionalSeconds])
 }

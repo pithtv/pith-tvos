@@ -12,6 +12,10 @@ import Network
 struct PithTVApp: App {
     @State var pith: Pith?
     
+    init() {
+        URLCache.shared = URLCache(memoryCapacity: 120_000_000, diskCapacity: 1000_000_000)
+    }
+    
     var body: some Scene {
         WindowGroup {
             if(pith != nil) {

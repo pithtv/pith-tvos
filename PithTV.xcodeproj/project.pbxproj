@@ -22,6 +22,8 @@
 		7F5B75A62922BC7E0093073F /* jurassicpark.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F5B75A52922BC7E0093073F /* jurassicpark.json */; };
 		7F6FABF42923D98500DFCD13 /* radarr.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F6FABF32923D98500DFCD13 /* radarr.json */; };
 		7F6FABF82923E1F700DFCD13 /* DragGestureActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6FABF72923E1F700DFCD13 /* DragGestureActions.swift */; };
+		7F74DDCF2930028B0052476D /* TvShowDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74DDCE2930028B0052476D /* TvShowDetails.swift */; };
+		7F74DDD1293005620052476D /* barry.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F74DDD0293005620052476D /* barry.json */; };
 		7FE7A259291595FA00B322B0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7A258291595FA00B322B0 /* Channel.swift */; };
 		7FE7A25B291596CE00B322B0 /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FE7A25A291596CE00B322B0 /* channels.json */; };
 		7FE7A25D2915982200B322B0 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7A25C2915982200B322B0 /* ModelData.swift */; };
@@ -73,6 +75,8 @@
 		7F5B75A52922BC7E0093073F /* jurassicpark.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jurassicpark.json; sourceTree = "<group>"; };
 		7F6FABF32923D98500DFCD13 /* radarr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = radarr.json; sourceTree = "<group>"; };
 		7F6FABF72923E1F700DFCD13 /* DragGestureActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureActions.swift; sourceTree = "<group>"; };
+		7F74DDCE2930028B0052476D /* TvShowDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetails.swift; sourceTree = "<group>"; };
+		7F74DDD0293005620052476D /* barry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = barry.json; sourceTree = "<group>"; };
 		7FE7A258291595FA00B322B0 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		7FE7A25A291596CE00B322B0 /* channels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
 		7FE7A25C2915982200B322B0 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 				7FE7A2642916580100B322B0 /* recentlyAdded.json */,
 				7F5B75A52922BC7E0093073F /* jurassicpark.json */,
 				7F6FABF32923D98500DFCD13 /* radarr.json */,
+				7F74DDD0293005620052476D /* barry.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				7F254186291EDBD500A8EFBB /* ChannelBrowser.swift */,
 				7F254188291EE70800A8EFBB /* ChannelItemDetails.swift */,
 				7F6FABF72923E1F700DFCD13 /* DragGestureActions.swift */,
+				7F74DDCE2930028B0052476D /* TvShowDetails.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +367,7 @@
 			files = (
 				7FE7A25B291596CE00B322B0 /* channels.json in Resources */,
 				7F6FABF42923D98500DFCD13 /* radarr.json in Resources */,
+				7F74DDD1293005620052476D /* barry.json in Resources */,
 				7F358E722914171C0099FD1A /* Preview Assets.xcassets in Resources */,
 				7F358E6F2914171C0099FD1A /* Assets.xcassets in Resources */,
 				7FE7A263291657DA00B322B0 /* ribbons.json in Resources */,
@@ -508,6 +515,7 @@
 				7FE7A2612916521A00B322B0 /* RibbonItem.swift in Sources */,
 				7F358E6B2914171B0099FD1A /* PithTVApp.swift in Sources */,
 				7FE7A2942917F01D00B322B0 /* PithClient.swift in Sources */,
+				7F74DDCF2930028B0052476D /* TvShowDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

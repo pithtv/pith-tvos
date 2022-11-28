@@ -19,7 +19,9 @@ struct ChannelBrowser: View {
     ]
     
     var body: some View {
-        if(children == nil && item?.type != .file) {
+        if(item?.type == .container && item?.mediatype == .show) {
+            TvShowDetails(pith: pith, channelId: channelId, item: item!)
+        } else if(children == nil && item?.type != .file) {
             ProgressView().task {
                 do {
                     children = try await pith.listChannel(
@@ -35,40 +37,29 @@ struct ChannelBrowser: View {
                         ChannelItemDetails(pith: pith, channelId: channelId, item: item!)
                     }
                     if(children != nil) {
-                        switch(item?.mediatype) {
-                        case .show, .season:
-                            ForEach(children!) {
-                                childItem in
-                                
-                                NavigationLink(destination: ChannelBrowser(pith: pith, channelId: channelId, item: childItem)) {
-                                    Text(childItem.title)
-                                }
-                            }
-                        default:
-                            LazyVGrid(columns: adaptiveColumns) {
-                                ForEach(children!) {childItem in
-                                    NavigationLink(destination: ChannelBrowser(
-                                        pith: pith,
-                                        channelId: channelId,
-                                        item: childItem
-                                    )) {
-                                        
-                                        if let poster = childItem.posters?[0] {
-                                            AsyncImage(url: pith.imgUrl(poster.url),
-                                                       content: {
-                                                img in img
-                                                    .resizable()
-                                                    .aspectRatio(contentMode: .fill)
-                                            },
-                                                       placeholder: {
-                                                ProgressView()
-                                            })
-                                            .frame(width: 260, height: 390)
-                                        } else {
-                                            Text(childItem.title)
-                                        }
-                                    }.buttonStyle(CardButtonStyle())
-                                }
+                        LazyVGrid(columns: adaptiveColumns) {
+                            ForEach(children!) {childItem in
+                                NavigationLink(destination: ChannelBrowser(
+                                    pith: pith,
+                                    channelId: channelId,
+                                    item: childItem
+                                )) {
+                                    
+                                    if let poster = childItem.posters?[0] {
+                                        AsyncImage(url: pith.imgUrl(poster.url),
+                                                   content: {
+                                            img in img
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fill)
+                                        },
+                                                   placeholder: {
+                                            ProgressView()
+                                        })
+                                        .frame(width: 260, height: 390)
+                                    } else {
+                                        Text(childItem.title)
+                                    }
+                                }.buttonStyle(CardButtonStyle())
                             }
                         }
                     }
